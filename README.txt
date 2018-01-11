@@ -76,7 +76,7 @@ For each country, report its name, capital, population, and size. Report every c
         <size>…</size>
         <inception>…</inception>
     </country>
-        ⋮
+        ...
 </summary>
 
 ### Instructions
