@@ -8,13 +8,14 @@ Report the countries that have “Buddhist” reported as a religion practiced w
 
 ### Structure
 
-
+```xml
 <myxml>
 <buddhist>
     <country name='…' percentage='…'/>
     ...
 </buddhist>
 </myxml>
+```
 
 ### Instructions
 
@@ -30,6 +31,8 @@ Report countries that straddle two (or more) continents. Include as content whic
 
 ### Structure
 
+```xml
+<myxml>
 <straddle>
     <country name='…'>
         <continent name='…'/>
@@ -37,7 +40,8 @@ Report countries that straddle two (or more) continents. Include as content whic
     </country>
     ...
 </straddle>
-
+</myxml>
+```
 ### Instructions
 
 Within root <straddle>, present the <country> list in document order.
@@ -50,7 +54,8 @@ Within node <country>, present the <continent> node in document order (as they a
 Report countries that have more than 5% inflation and 10% unemployment.
 
 ### Structure
-
+```xml
+<myxml>
 <woe>
     <country inflation='…' unemployment='…'>
         <inflation>…</inflation>
@@ -58,7 +63,8 @@ Report countries that have more than 5% inflation and 10% unemployment.
     </country>
         ⋮
 </woe>
-
+</myxml>
+```
 ### Instructions
 
 Within root <woe>, present the <country> list in document order.
@@ -70,7 +76,8 @@ Within root <woe>, present the <country> list in document order.
 For each country, report its name, capital, population, and size. Report every country; if one of the requested pieces of information for the country is missing, just leave it out.
 
 ### Structure
-
+```xml
+<myxml>
 <summary>
     <country>
         <name>…</name>
@@ -81,7 +88,8 @@ For each country, report its name, capital, population, and size. Report every c
     </country>
         ...
 </summary>
-
+</myxml>
+```
 ### Instructions
 
 For name, report the country's name, not its country code.
@@ -100,14 +108,16 @@ Within root <summary>, sort the <country> list by name.
 For each country, report the alpha city for that country; that is, the city in the country with the largest population.
 
 ### Structure
-
+```xml
+<myxml>
 <alpha>
     <country name='…'>
         <alpha name='…' population='…'/>
     </country>
         ⋮
 </alpha>
-
+</myxml>
+```
 ### Instructions
 
 Use the country's name, not country code.
@@ -124,7 +134,8 @@ In the extremely rare case a country has more than one largest city (that is, wi
 For each river mentioned, report it by name (as an attribute) and contain the list of the countries by name that the river runs through.
 
 ### Structure
-
+```xml
+<myxml>
 <rivers>
     <river name='…'>
         <country name='…'/>
@@ -132,7 +143,8 @@ For each river mentioned, report it by name (as an attribute) and contain the li
     </river>
         ⋮
 </rivers>
-
+</myxml>
+```
 ### Instructions
 
 For a country's name, report the country's name, not its country code.
@@ -151,7 +163,8 @@ Within a <river> node, order the <country> nodes by the countries' names.
 For each country, list the countries that border it by name. Place within the bordering <neighbour> a node <length> that contains the length of the shared border.
 
 ### Structure
-
+```xml
+<myxml>
 <countries>
     <country name='…'>
         <neighbour name='…'>
@@ -161,7 +174,8 @@ For each country, list the countries that border it by name. Place within the bo
     </country>
         ⋮
 </countries>
-
+</myxml>
+```
 ### Instructions
 
 For countries and neighbours, use the country's name, not country code.
@@ -176,7 +190,8 @@ Within each <country> node, sort the <neighbour> nodes by name.
 Generate a document that reports for each language, the countries that have a reported population that speaks that language. Report in an attribute speakers for <country> an estimate of the number of speakers of that language (as country's population times the percentage that speak that language).
 
 ### Structure
-
+```xml
+<myxml>
 <languages>
     <language name='…'>
         <country name='…' speakers='…'/>
@@ -184,7 +199,8 @@ Generate a document that reports for each language, the countries that have a re
     </language>
         ⋮
 </languages>
-
+</myxml>
+```
 ### Instructions
 
 For calculating speakers, when more than one population number is reported for a country, use the one with the latest year.
@@ -198,12 +214,14 @@ Sort the <language> list within the <languages> root by language name (ascending
 Report the aggregate gdp per capita (gdppc) for democracies versus non-democracies.
 
 ### Structure
-
+```xml
+<myxml>
 <gdp_per_capita>
     <countries government='…' gdppc='…'/>
         ⋮
 </gdp_per_capita>
-
+</myxml>
+```
 ### Instructions
 
 Only consider countries with a reported gdp_total.
@@ -218,7 +236,8 @@ The GDP's reported in the dataset seem to be in US dollars and in millions. Adju
 Report for each continent the land area of the continent as size and the number of countries on that continent.
 
 ### Structure
-
+```xml
+<myxml>
 <continents>
     <continent name='…' size='…' countries='…'>
         <country name='…' size='…'/>
@@ -226,7 +245,8 @@ Report for each continent the land area of the continent as size and the number 
     </continent>
         ⋮
 </continents>
-
+</myxml>
+```
 ### Instructions
 
 Some countries straddle several continents. The node <encompassed> reports the percentage of land area of the country within that continent. Pro-rate the country's contribution to the continent's size by the percentage.
