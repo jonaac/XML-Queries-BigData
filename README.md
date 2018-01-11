@@ -8,14 +8,14 @@ Report the countries that have “Buddhist” reported as a religion practiced w
 
 ### Structure
 
-```xml
+
 <myxml>
 <buddhist>
     <country name='…' percentage='…'/>
     ...
 </buddhist>
 </myxml>
-```
+
 ### Instructions
 
 For a country's name, report the country's name, not its country code.
