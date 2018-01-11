@@ -21,7 +21,7 @@ Report the countries that have “Buddhist” reported as a religion practiced w
 
 For a country's name, report the country's name, not its country code.
 For attribute percentage, report the percentage of the population of that country which is buddhist.
-Within root <buddhist>, present the <country> list in document order.
+Within root '<buddhist>', present the '<country>' list in document order.
 
 ## B-straddle
 
@@ -44,8 +44,8 @@ Report countries that straddle two (or more) continents. Include as content whic
 ```
 ### Instructions
 
-Within root <straddle>, present the <country> list in document order.
-Within node <country>, present the <continent> node in document order (as they appear within that <country> node within the document).
+Within root '<straddle>', present the '<country>' list in document order.
+Within node '<country>', present the '<continent>' node in document order (as they appear within that '<country>' node within the document).
 
 ## C-woe
 
