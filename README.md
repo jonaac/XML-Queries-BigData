@@ -10,7 +10,7 @@ Report the countries that have “Buddhist” reported as a religion practiced w
 
 <buddhist>
     <country name='…' percentage='…'/>
-        ⋮
+    ...
 </buddhist>
 
 ### Instructions
@@ -30,9 +30,9 @@ Report countries that straddle two (or more) continents. Include as content whic
 <straddle>
     <country name='…'>
         <continent name='…'/>
-            ⋮
+        ...
     </country>
-        ⋮
+    ...
 </straddle>
 
 ### Instructions
