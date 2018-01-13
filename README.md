@@ -1,5 +1,11 @@
 # XML-Queries-BigData
 
+The project consists of composing ten XQuery queries over the MONDIAL XML dataset. I used the Zorba NoSQL Query Processor, Zorba is distributed under Apache License, Version 2.0. The project is mainly supported by the FLWOR Foundation, Oracle, and 28msec.”
+
+### MONDIAL Database
+
+The MONDIAL Database is curated and housed at the Institute for Informatics Georg-August-Universität Göttingen. It is the integration of various datasets regarding facts about countries — much from the CIA World Factbook — and is available in various formats, including XML.
+
 ## A-buddhist
 
 ### Question
